@@ -1,6 +1,6 @@
 import uvicorn
-
-LOG='debug'
+import time
+LOG = 'debug'
 
 if __name__ == '__main__':
     try:
@@ -29,4 +29,6 @@ if __name__ == '__main__':
         print('='*100)
         print(str(errormain))
         print('='*100)
-        print('\nExiting\n')
+        print('Exiting\n')
+    while True:
+        time.sleep(1)  # Keep the process running to handle requests
